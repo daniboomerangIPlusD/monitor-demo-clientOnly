@@ -1,0 +1,26 @@
+{
+  "name": "Demo-v1: clientOnly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web.js",
+  "dependencies": {
+    "express": "~3.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synoptics-monitor/monitor-demo-clientOnly/"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "https://github.com/daniboomerang",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/synoptics-monitor/monitor-demo-clientOnly/issues"
+  }
+}

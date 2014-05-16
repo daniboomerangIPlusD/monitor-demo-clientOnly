@@ -1,0 +1,38 @@
+<div ng-controller="sumManagerCtrl">
+	<div class="row">
+	  <div class="col-md-6 remote-control-container">  
+	  	<div class="row">
+		  	<button class="col-xs-4 custom-button-control" ng-click="startPulling()"><img src="/app/images/buttons/play-20.png"/></button>
+		    <button class="col-xs-4 custom-button-control" ng-click="stopPulling()"><img src="/app/images/buttons/stop-20.png"/></button>
+		</div>
+	  </div>
+	  <div class="col-md-6 remote-control-container">	
+	  	<div class="row">
+		  <input ng-model="timeInterval" type="text" class="form-control col-xs-5" id="ms-setter"required autofocus>
+		  <button class="col-xs-4 custom-button-control" ng-click="updateInterval(timeInterval)"><img src="/app/images/buttons/sinchronize-20.png"/></button>		    
+	  	</div>
+	  </div>
+	</div>  
+	<div class="row">
+	  <div class="logger-sum-container gray-cool-border">
+		{{ loggerData[0] }} </br> {{ loggerData[1] }} </br> {{ loggerData[2] }} </br>{{ loggerData[3] }} </br> {{ loggerData[4] }} </br> {{ loggerData[5] }} </br>{{ loggerData[6] }} </br> {{ loggerData[7] }} </br> {{ loggerData[8] }} </br> {{ loggerData[9] }} </br> {{ loggerData[10] }} </br> {{ loggerData[11] }} </br>{{ loggerData[12] }}
+	  </div>
+	</div>  
+	<div class="row">
+	  <div class="statistics-sum-container gray-cool-border"> <!--ng-Controller="ProgressDemoCtrl"-->
+	  	<div class="bars-container" style="text-align:center;">
+	  	<pre style="font-weight:bold;">Sum statistics: {{ result }} Mod{{ statisticsLenght }} = {{ resultAppliedMOD }}</pre>  	 
+	  	<!--<div ng-repeat="percentage in operationPercentages">
+	  		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ percentage.number }}</div><div class="col-xs-1" style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="percentage.percentage"><b>{{ percentage.percentage }}%</b></progressbar></div>
+		</div>-->
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[0].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[0].percentage"><b>{{ operationPercentages[0].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[1].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[1].percentage"><b>{{ operationPercentages[1].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[2].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[2].percentage"><b>{{ operationPercentages[2].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[3].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[3].percentage"><b>{{ operationPercentages[3].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[4].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[4].percentage"><b>{{ operationPercentages[4].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[5].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[5].percentage"><b>{{ operationPercentages[5].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[6].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[6].percentage"><b>{{ operationPercentages[6].percentage }}%</b></progressbar></div>
+		<div class="row"><div class="col-xs-1" style="margin:5px;font-weight:bold;">{{ operationPercentages[7].number }}</div><div style="margin:5px;font-weight:bold;"></div><progressbar style="margin:5px;" class="progress-striped active" value="operationPercentages[7].percentage"><b>{{ operationPercentages[7].percentage }}%</b></progressbar></div>	
+	  </div>	
+	</div>  
+</div>

@@ -1,0 +1,117 @@
+
+
+/*************************/
+/****MAIN ARCHITECTURE****/
+/*************************/
+
+
+#simutator-container {
+/*-webkit-box-shadow: 0 0 6px 5px #61020B;
+box-shadow: 0 0 6px 5px #61020B;*/
+}
+
+#main-container{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+/** VIEW **/
+.image-view {}
+.synoptic-view{
+  width: 65%;
+  text-align:center;
+  background-color: #f5f5f5;
+
+}
+
+.synoptic-manager {
+  position: absolute;
+  height: 1160px;
+  z-index: 1;
+  right: 40px;
+  width: 30%;
+  text-align:center;
+  background-color: #f5f5f5;
+}
+
+.synoptic-manager .manager-container {
+  margin-bottom:50px;
+  padding: 30px;
+  text-align: right;
+}
+
+.statistics-container, .logger-container{
+  width: 396px;
+  height: 300px;
+  margin-top: 30px;
+  background-color: #f5f5f5;
+}
+
+.statistics-container{
+  height: 150px;
+}
+
+.logger-container{
+  text-align: left;
+  background-color: black;
+  color: green; 
+  font-size: 12px;
+  padding: 10px;
+}
+
+.statistics-sum-container, .logger-sum-container{
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 396px;
+  margin-top: 25px;
+  background-color: #f5f5f5;
+
+}
+
+.statistics-sum-container{
+  height: 310px;
+}
+
+.logger-sum-container{
+  text-align: left;
+  background-color: black;
+  color: green; 
+  font-size: 12px;
+  padding: 10px;
+}
+
+.remote-control-container{
+  height: 20px;
+}
+
+#ms-setter{
+    margin-top: 0px;
+    height: 28px;
+    width: 80px;
+    text-align: center;
+}
+.form-control{
+    height: 20px;
+    background-color: black;
+    color: green; 
+}
+
+.footer {
+  padding-top: 9px;
+  background-color: black;
+  color: #cccccc;
+  text-align: center;
+  height: 35px;
+}
+.footer p {
+  font-size: 11px;
+}
+.footer a {
+  color: red;
+}
+
+/**********************/
+/**********************/
+/**********************/
+
